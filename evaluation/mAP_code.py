@@ -17,3 +17,6 @@ def AP(ranked_list, ground_truth):
 l1 = [1,1,1,0,0]
 l2 = [1,1,1,1,1]
 print(AP(l1,l2))
+
+
+

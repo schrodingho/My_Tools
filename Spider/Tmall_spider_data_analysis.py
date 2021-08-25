@@ -18,9 +18,12 @@ vivo="https://list.tmall.com/search_product.htm?q=vivo%CA%D6%BB%FA&type=p&spm=a2
 oppo="https://list.tmall.com/search_product.htm?q=oppo%CA%D6%BB%FA&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
 iphone = 'https://list.tmall.com/search_product.htm?q=iphone&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton'
 anzhuo="https://list.tmall.com/search_product.htm?q=%B0%B2%D7%BF%CA%D6%BB%FA&type=p&spm=a220m.1000858.a2227oh.d100&xl=anzhuo%CA%D6%BB%FA_1&from=.list.pc_1_suggest"
-huawei = 'https://list.tmall.com/search_product.htm?q=%BB%AA%CE%AA%CA%D6%BB%FA&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton'
-
+huawei="https://list.tmall.com/search_product.htm?q=%BB%AA%CE%AA&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
+yijia="https://list.tmall.com/search_product.htm?q=%D2%BB%BC%D3&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
+sanxing="https://list.tmall.com/search_product.htm?q=%C8%FD%D0%C7&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
 ## 体验型产品
+weishengzhi="https://list.tmall.com/search_product.htm?q=%CE%C0%C9%FA%D6%BD&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
+yagao="https://list.tmall.com/search_product.htm?q=%D1%C0%B8%E0&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
 lays="https://list.tmall.com/search_product.htm?q=%C0%D6%CA%C2%CE%DE%CF%DE%CA%ED%C6%AC&type=p&spm=a220m.1000858.a2227oh.d100&from=.list.pc_1_searchbutton"
 szss="https://list.tmall.com/search_product.htm?q=%C8%FD%D6%BB%CB%C9%CA%F3&type=p&spm=a220m.1000858.a2227oh.d100&xl=sanzhi_1&from=.list.pc_1_suggest"
 tsyl="https://list.tmall.com/search_product.htm?q=%CC%BC%CB%E1%D2%FB%C1%CF&type=p&spm=a220m.1000858.a2227oh.d100&xl=%CC%BC%CB%E1_1&from=.list.pc_1_suggest"
@@ -97,10 +100,7 @@ def regression_analysis(X,y):
     return get_lr_stats(x_in, y_in, lrg1)
     # plt.scatter(x_in, y_in)
     # plt.show()
-
-
 #### 统计量参数
-
 def get_lr_stats(x, y, model):
     message0 = f'一元线性回归方程为: \ty={model.intercept_[0]:.3f} + {model.coef_[0][0]:.3f}*x'
     from scipy import stats
@@ -147,8 +147,8 @@ def liucheng(urla,name):
 if __name__=="__main__":
     names1=['iPhone','Android','xiaomi','hongmi','vivo','oppo','huawei']
     search_p=[iphone,anzhuo,xiaomi,hongmi,vivo,oppo,huawei]
-    names2=['drinks','crisps','shampoo','Lays','Three squirrels', 'fruit']
-    experi_p = [tsyl, sp, xfs, lays, szss, sg]
+    names2=['drinks','crisps','shampoo','Lays','Bathroom Tissue', 'fruit']
+    experi_p = [tsyl, sp, xfs, lays, weishengzhi, sg]
     dict1={}
     dict2={}
     for i in range(len(names1)):
