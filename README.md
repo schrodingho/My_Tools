@@ -15,3 +15,4 @@ Some little tools for dealing with various problems
 - 主要为推荐系统评价指标
 - NDCG
 - MAP(Mean Average Precision)
+- other metrics 
