@@ -13,6 +13,6 @@ Some little tools for dealing with various problems
 - Regression Analysis
 ### Evaluation
 - 主要为推荐系统评价指标
-- NDCG
-- MAP(Mean Average Precision)
-- other metrics 
+    - Recall
+    - NDCG(待修改)
+    - MAP(Mean Average Precision)(待修改)
